@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        console.error("di baris ini perlu di perbaiki (line9)")
+        const name = "Hannan Azizie";
+        const umur = 24;
+        const nilai = 90;
+        const syarat = 90;
+        if (nilai >= syarat) {
+            const template = `name : ${name},umur: ${umur}, lulus;`
+            console.info(template);
+        } else {
+            const template =`name : ${name},umur: ${umur}, tidak lulus;`
+            console.info(template);
+        }
+
+        const multilinestring = `
+        nama: ${name}
+        umur: ${umur}
+        hobi: main
+        `;
+        document.writeln("<pre>");
+        document.writeln(multilinestring);
+        document.writeln("</pre>");
+
+        const value2 = parseInt("2");
+        const value3 = 2;
+        const hitung = value2 + value3;
+        document.writeln(`<p>${hitung}</p>`);
+   </script> 
+</body>
+</html>

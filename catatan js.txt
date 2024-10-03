@@ -1,0 +1,199 @@
+(https://www.canva.com/design/DAFsUn7PG0c/XJlG5CBHIeAuLbR1carKPw/edit) [link presentasi canva]
+
+console menthod
+console.info |memberitahu informasi |kode kita aman dan tidak ada masalah
+console.wam  |Memberitahu informasi peringatan |
+sonsole.error|Memberitahu informasi error|
+console.table|memberitahu informasi dalam bentuk table|
+
+putih=aman
+kuning=warning
+merah=error
+
+String Tamplate
+Di gunakan saat
+Pre=di gunakan untuk blok (jika tidak maka tidak sesuai dengan yang di inginkan)
+
+
+Arti						|perlu di ingat
+if=jika						|data dalam array tidak ada batasannya harus data apa
+else=kalau tidak				|jadi kita bisa
+
+
+
+__________________________________________
+						
+DATA ARRAY
+Pola bilangan yang di mulai dari satu bukan 0
+---------
+Cara kerja array
+-setiap data array akan di simpan dalam posisi berrutan, dimana urutan pertama di mulai dari 0
+-Setiap menmbah dar=ta Array, otomatis data akn disimpan di urutan terakhir
+-Ururtan di array kita sebut dengan index
+---------
+Operasi array
+array.push(value) =Menambahkan data ke array
+array.length() =Untuk mendapatkan Panjang Array
+array[index] =Mendapatkan data posisi inedx
+array[index] = value =Mengubah data posisi index
+delete array[index] =Mneghapus data di posisiindex,namun index tidak bergeser
+
+---------
+Tipe data array
+-Array adalah tipe data yang berisikan Kumpulan data
+-array Java Script meiliki sifat dinamis,artinya datanya bisa bertambah dengan sendirinya saat kita masukan ke dalam data array
+Push: itu untuk menambah kan
+_________________________________________
+
+Kata kunci let dan const
+-Let:Variabel yang bisa di ubah
+-Const:Variabel yang tidak bisa di ubah
+-----------------------------------------
+Operator Metematika untuk tipe number:
+-Operatot Aritmatika
+-Operator Augmented Assignment
+-Operator Unary
+Operator nya:
+Tambah=(+)
+Pengurangan=(-)
+Perkalian=(*)
+Pangkat\Exponensial=(**)
+Pembagian=(/)
+Sisa Bagi=(%)
+------------------------------------------
+Operator Metematika
+result = result + 20 
+result = result - 20
+result = result * 20
+result = result ** 20
+result = result / 20
+result = result % 20
+
+Operator Augmented Assignments (Jadi lebih singkat)
+result +=  20
+result -=  20
+result *=  20
+result **=  20
+result /=  20
+result %=  20
+__________________________________________
+Operator Unary:
+
++ = Menadakan nilai positif
+- = mendakan nilai negatif
+++ = Increment atau menaikan 1 angka
+-- + Increment atau menurunkan 1 angka
+__________________________________________
+
+Operator perbandingan
+-Operasi perbandingan adalah operasi untuk membandingkan dua buah data
+-Operasi perbandingan adalah operasi yang menghasilkan nilai Boolean (benar atau salah)
+-Jika operasinya adalah benar, maka nilai harus True
+-Jika operasinya salah, maka nilainya adalah false
+---------
+
+Operasi Perbandingan:
+> = Lebih dari
+< = kurang dari
+>= =Lebih dari sama dengan
+<= =Lebih dari sama dengan
+== =Sama dengan
+=== =Sama dengan dan sama tipe
+!= =Tidak sama dengan
+!== =tidak sama dengan atau tidak sama tipe
+___________________________________________
+
+Operator Logika:
+-Operator logika adalah operator untuk dua buah data boolean
+-Hasil dari operator logika Boolean lagi
+----------
+
+Operasi Logika
+&& = dan
+|| = atau
+! =kebalikan
+---
+
+Contoh:(jika mengandung false hasilnya pasti false,jika 22 nya true maka true)
+true && true =true
+true && false =false
+false && true =false
+false && false =false
+---
+
+Contoh:(jika mengandung true hasilnya pasti true,jika 22 nya false maka false)
+true || true =true
+true || false =false
+false || true =false
+false || false =false
+---
+
+Contoh:(jika salah maka benar,jika benar maka salah)
+true ! true =true
+true ! false =false
+_________________________________
+
+String Template:
+-Unutk menambahkan string dengan data lain menggunakan operator + (plus)
+-Pada kasus tertentu, penggunaan operator + (plus) sangat menyulitkan, apalagi jika jumlah banyak
+-Java Script meiliki fitur yang Bernama String Template, Kita dapat mensubtitusi data dari luar string ke dalam String,
+seperti mengambil data variabel, atau bahkan melakukan operasi metematika
+-Unutk menggunakan String Template,cara pembuatan String nya harus menggunakan `(backtick), Bukan '(petik satu) atau "(petik dua).
+--------
+
+Multiline String
+tring emplate juga bisa di gunakan unutk
+
+
+
+
+
+________________________________
+
+Koversi String dan Number
+parseint(string)|Mengkonversi dari string ke number (bilangan bulat)
+parseFloat(string)|Mengkonveri dari tring ke number(bilangan pecahan)
+Number(string)|Mengkonversikan dari string ke number (bilangan bulat atau pecahan)
+number.toString()|Mnegkonversikan dari number ke string
+________________________________
+
+NaN(Not a Number)--->NUmber yang unique
+-Jika data String yang kita coba lakukan kinversi bukanlah data valid, maka hasil dari konversi tersebut adalah NaN9Nor a Number)
+-NaN adalah number special yang menyebutkan bahwa ini bukan lah number
+-Jika NaN di operasikan dengan data number lainya, maka hasilnya akan menjadi NaN lagi
+------
+
+isNaN() Function
+-Function isNaN
+
+________________________________
+
+Alert,Prompt dan Confrim
+-Java Script meiliki fitur yang bernama alert, prompt dan confrim
+-Alert digunakan untuk memberi peringatan berupa popup text di browser
+
+
+
+
+________________________________
+
+Undifine
+-Undifine adalah sebuah kata kunci Java Script
+-Undifine adalah sebuah tipe data
+-Sebuah vaariabel yang belum di tambahkan nilai,maka artinya tersebut merupakan tipe undifine
+-Kadang progammer JavaScript pemula undifined ini memang aga sedikit membingungkan
+-Undifine itu berbeda dengan null di bahasa pemrogaman lain
+
+________________________________
+
+Null
+-null merupakan representasi data kosong
+-null berbeda dengan undefine,null berarti variable sudah di tambahkan value nya, hanya saja value nya null
+-Sedang kanundefine adalah variabel belum ditambahkan value apapun
+
+_________________________________
+Operator typeof
+-typeof merupakan operator yang bisa  =kita gunakan untuk melihat tipe data sebuah value atau variabel
+-Karena Kava Script merupakan dynamic langngue, jadi k=kadang kita perlu mengecek tips data sebuah value atau variabel menggunakan operator typeof
+-Hasil dari operator typeof adalah string 
+

@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter dan Find</title>
+</head>
+<body>
+    <script>
+        const dataHidangan = [
+  { tipe: "makanan", jenis: "nasi goreng" },
+  { tipe: "minuman", jenis: "teh manis" },
+  { tipe: "makanan", jenis: "ayam bakar" },
+  { tipe: "minuman", jenis: "kopi hitam" },
+  { tipe: "makanan", jenis: "mie goreng" },
+  { tipe: "minuman", jenis: "susu coklat" },
+  { tipe: "makanan", jenis: "sate ayam" },
+  { tipe: "minuman", jenis: "jus jeruk" },
+  { tipe: "makanan", jenis: "rendang" },
+  { tipe: "minuman", jenis: "air mineral" },
+  { tipe: "makanan", jenis: "pizza" },
+  { tipe: "minuman", jenis: "lemonade" },
+  { tipe: "makanan", jenis: "burger" },
+  { tipe: "minuman", jenis: "soda" },
+  { tipe: "makanan", jenis: "sushi" },
+  { tipe: "minuman", jenis: "es krim" },
+  { tipe: "makanan", jenis: "roti bakar" },
+  { tipe: "minuman", jenis: "cappuccino" },
+  { tipe: "makanan", jenis: "pancake" },
+  { tipe: "minuman", jenis: "smoothie" },
+];
+
+
+
+
+
+//SOAL!!!        
+
+
+//1.
+function filtermakanan(){
+    const makanan = dataHidangan.filter(
+        (makanan) => makanan.tipe === "makanan"
+    );
+    return makanan;
+};
+console.log("makanan", filtermakanan());
+
+//2
+function filterSelainmakanan(){
+    const Selainmakanan = dataHidangan.filter(
+        (Selainmakanan) => Selainmakanan.tipe !== "makanan"
+    );
+    return Selainmakanan;
+};
+console.log("Selain Makanan", filterSelainmakanan());
+
+//3
+function findnasgor(){
+    const NasiGor = dataHidangan.find(
+        (NasiG) => NasiG.jenis === "nasi goreng"
+    ); 
+    return NasiGor;
+};
+console.log(" Nasi Goreng", findnasgor());
+
+//4
+function findJengkol(){
+    const Jengkol = dataHidangan.find(
+        (Jengkol) => Jengkol.jenis === "Jengkol"
+    ); 
+    return Jengkol;
+};
+console.log("Jengkol", findJengkol());
+
+//5
+function jumlahData(){
+  const DATA = (filtermakanan().length + filterSelainmakanan().length);
+  const findnasigoreng = 1; //findnasigoreng = 1 karena find hanya bisa mengambil 1data saja
+  const hitung = DATA + findnasigoreng;
+  return hitung;
+}
+console.log("Jumlah Data", jumlahData())
+
+
+const dataTanggal = [
+  { hari: 1, bulan: "Januari", tahun: 2022 },
+  { hari: 15, bulan: "Februari", tahun: 2023 },
+  { hari: 10, bulan: "Juli", tahun: 2022 },
+  { hari: 5, bulan: "April", tahun: 2023 },
+  { hari: 20, bulan: "Mei", tahun: 2022 },
+  { hari: 18, bulan: "Juni", tahun: 1999 },
+  { hari: 2, bulan: "Juli", tahun: 2022 },
+  { hari: 7, bulan: "Juli", tahun: 1999 },
+  { hari: 22, bulan: "September", tahun: 2022 },
+  { hari: 12, bulan: "Oktober", tahun: 1999 },
+  { hari: 9, bulan: "November", tahun: 2022 },
+  { hari: 30, bulan: "Desember", tahun: 1999 },
+  { hari: 3, bulan: "Januari", tahun: 2022 },
+  { hari: 22, bulan: "Februari", tahun: 2023 },
+  { hari: 8, bulan: "Maret", tahun: 2022 },
+  { hari: 13, bulan: "Juli", tahun: 2023 },
+  { hari: 25, bulan: "Mei", tahun: 2022 },
+  { hari: 14, bulan: "Juli", tahun: 2023 },
+  { hari: 6, bulan: "Juli", tahun: 2022 },
+  { hari: 23, bulan: "Juli", tahun: 2023 },
+];
+
+//2
+function check86() {
+const result = dataTanggal.filter(
+    (result) => result.hari >= "15"
+);
+
+  return result;
+}
+console.log(" Check", check86());
+
+//2
+function dataTanggal2(){
+    const data = dataTanggal.filter(
+        (data) => data.hari >= "10"
+    )
+    const tahun = dataTanggal.filter(
+        (tahun) => tahun.tahun >= "1999"
+    )
+    return data;
+    return tahun;
+}
+console.log("Data tanggal", dataTanggal2())
+
+//2
+function hari(){
+    const h = dataTanggal.find(
+        (h) => h.hari == "22" && h.bulan === "Februari"  
+    );
+    return h;
+}
+console.log(hari())
+
+//2
+function empatJanuari(){
+    const t4 = dataTanggal.find(
+        (h4) => h4.hari === "4"
+    ); 
+    return t4;
+};
+console.log(" tanggal 4", empatJanuari());
+
+//2
+function jumlahdata(){
+  const DATA = (check86().length + dataTanggal2().length);
+  const find4januari = 1; //find4januaari = 1 karena find hanya bisa mengambil 1data saja
+  const hitung = DATA + find4januari;
+  return hitung;
+}
+console.log( "jumlah data", jumlahdata())
+
+const dataOrang = [
+  { nama: "John Doe", usia: 28, kota: "New York" },
+  { nama: "Jane Smith", usia: 24, kota: "Los Angeles" },
+  { nama: "Bob Johnson", usia: 32, kota: "New York" },
+  { nama: "Alice Brown", usia: 24, kota: "San Francisco" },
+  { nama: "David Wilson", usia: 29, kota: "Miami" },
+  { nama: "Jane Smith", usia: 24, kota: "New York" },
+  { nama: "Bob Johnson", usia: 24, kota: "Dallas" },
+  { nama: "Jane Smith", usia: 27, kota: "New York" },
+  { nama: "William Miller", usia: 20, kota: "Atlanta" },
+  { nama: "Sophia Martinez", usia: 24, kota: "New York" },
+];
+
+//3
+function filterWna(){
+      const bukanNewYork = dataOrang.filter(
+          (orang) => orang.kota !== "New York"
+      );
+      return bukanNewYork;
+    };
+    console.log("3.A", filterWna());
+
+//3
+function filterOrang(){
+    const orang = dataOrang.filter(
+        (o) => o.usia != 24 && o.kota !== "New York" 
+    )
+    return orang;
+}
+console.log("orang", filterOrang())
+
+//3
+function Johnson(){
+      const bob = dataOrang.find(
+          (orang) => orang.nama === "Bob Johnson" && orang.kota === "Dallas"
+      );
+      return bob;
+    };
+    console.log("New york", Johnson());
+
+//3
+function Smith(){
+      const jane = dataOrang.find(
+          (orang) => orang.nama === "Jane Smith" && orang.kota === "Los Angeles"
+      );
+      return jane;
+    };
+    console.log("Jane Smith", Smith());
+
+//3
+function jumlahDataOrangWNA(){
+      const data = (filterWna().length + filterOrang().length);
+      const bobJohnson = 1;
+      const janeSmith = 1;
+      const hitung = data + bobJohnson + janeSmith;
+      return hitung;
+      }
+      console.log( "Jumlah Data", jumlahDataOrangWNA())
+</script>
+</body>
+</html>
